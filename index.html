@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .my-style{
+           height: 500px;
+           border: 1px solid red;    
+        }
+    </style>
+</head>
+<body>
+    
+    <button type="button" class="btn btn-danger" id="redBtn">Red</button>
+    <button type="button" class="btn btn-success" id="greenBtn">Green</button>
+    <button type="button" class="btn btn-primary" id="blueBtn">Blue</button>
+    <button type="button" class="btn btn-warning" id="defaultBtn">Default</button>
+    <div class="col-md-6 my-style" id="divOne"></div>
+    
+    <script>
+        var redBtn=document.getElementById('redBtn');
+        redBtn.onclick=function(){
+          var mainDiv=document.getElementById('divOne');
+          mainDiv.style.background='red';
+        };
+        
+        var greenBtn=document.getElementById('greenBtn');
+        greenBtn.onclick=function(){
+          var mainDiv=document.getElementById('divOne');
+          mainDiv.style.background='green';
+        };
+        
+        var blueBtn=document.getElementById('blueBtn');
+        blueBtn.onclick=function(){
+          var mainDiv=document.getElementById('divOne');
+          mainDiv.style.background='blue';
+        };
+        
+        var defaultBtn=document.getElementById('defaultBtn');
+        defaultBtn.onclick=function(){
+          var mainDiv=document.getElementById('divOne');
+          mainDiv.style.background='white';
+        };
+    </script>
+    
+</body>
+</html>
